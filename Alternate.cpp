@@ -16,7 +16,7 @@ int main(){
 	
 	for(int i = 0; i < lines; i++){
 		int j = 0;
-		while(j <= sp){
+		while(j < sp){
 			std::cout << " ";
 			++j;
 		}
@@ -25,13 +25,15 @@ int main(){
 			if(sp < 50){
 				++sp;
 			}else{
-			++flip;	
+				++flip;
+				--sp;
 			}
 		}else{
 			if(sp > 0){
 				--sp;
 			}else{
-			++flip;	
+				++flip;
+				++sp;
 			}
 		}
 	}
